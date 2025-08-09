@@ -1,14 +1,12 @@
 const Background = () => {
-  // Use the correct path for GitHub Pages deployment
-  const isProduction = typeof window !== 'undefined' && window.location.hostname === 'sylian1337.github.io';
-  const imagePath = isProduction ? '/WrathnillaWebsiteSource/images/Login-Static.jpeg' : '/images/Login-Static.jpeg';
   
   return (
     <>
       <div className="fixed inset-0 z-[-2]">
         {/* Background Image */}
         <img
-          src={imagePath}
+          /*src="/images/Login-Static.jpeg"*/
+          src="https://raw.githubusercontent.com/Sylian1337/WrathnillaWebsiteSource/refs/heads/main/public/images/Login-Static.jpeg"
           alt="Background"
           className="w-full h-full object-cover"
         />
