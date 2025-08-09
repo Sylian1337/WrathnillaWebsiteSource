@@ -7,7 +7,7 @@ const Background = () => {
       <div className="fixed inset-0 z-[-2]">
         {/* Background Image */}
         <Image
-          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/Login-Static.jpeg`}
+          src={`/images/Login-Static.jpeg`}
           alt="Background"
           fill
           sizes="100vw"
