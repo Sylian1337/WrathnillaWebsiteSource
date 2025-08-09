@@ -8,7 +8,6 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   pageExtensions: ['ts', 'tsx', 'md', 'mdx'],
   output: 'export', // enables static export in Next.js 13+
-  basePath: '/WrathnillaWebsiteSource',
   images: {
     unoptimized: true,
   },

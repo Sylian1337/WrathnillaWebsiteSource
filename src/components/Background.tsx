@@ -1,12 +1,10 @@
 const Background = () => {
-  
   return (
     <>
       <div className="fixed inset-0 z-[-2]">
         {/* Background Image */}
         <img
-          /*src="/images/Login-Static.jpeg"*/
-          src="https://raw.githubusercontent.com/Sylian1337/WrathnillaWebsiteSource/refs/heads/main/public/images/Login-Static.jpeg"
+          src="/images/Login-Static.jpeg"
           alt="Background"
           className="w-full h-full object-cover"
         />
