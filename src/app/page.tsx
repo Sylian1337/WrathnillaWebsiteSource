@@ -1,10 +1,7 @@
 "use client"
 
-import Background from "@/components/Background";
 import PatchNotesList from "@/components/PatchNotesList";
 import { motion } from "framer-motion";
-
-import Image from "next/image";
 import { FaDiscord, FaPatreon } from "react-icons/fa";
 
 export default function Home() {

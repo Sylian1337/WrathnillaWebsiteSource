@@ -3,7 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { useMDXComponents } from '../../../mdx-components';
-import AnimatedPatchNote from '../../../components/AnimatedPatchNote'; // adjust path if needed
+import AnimatedPatchNote from '../../../components/AnimatedPatchNote';
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join(process.cwd(), 'src/content/patch-notes'));
@@ -12,8 +12,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function PatchNotePage({ params }: { params: { slug: string } }) {
-  const filePath = path.join(process.cwd(), 'src/content/patch-notes', `${params.slug}.mdx`);
+export default async function PatchNotePage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const filePath = path.join(process.cwd(), 'src/content/patch-notes', `${slug}.mdx`);
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const { content, data } = matter(fileContent);
   const components = useMDXComponents({});
