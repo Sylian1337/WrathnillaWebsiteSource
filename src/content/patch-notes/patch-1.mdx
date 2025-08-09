@@ -1,0 +1,220 @@
+---
+title: 'Patch 1.0: The Awakening'
+date: '2025-06-01'
+---
+
+import ClassPatchNote from '../../components/ClassPatchNote';
+import SpellList from '../../components/SpellList';
+
+<div>
+
+<h1 className="text-2xl text-bold mb-4">Classes</h1>
+<ClassPatchNote title="Druid">
+<hr className="text-gray-700 text-opacity-100"></hr>
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**All class healing spells now only affect players**</li>
+    <li>**Entangling Roots:** Now only has one rank, duration reduced to 16 seconds, damage component removed, 1 minute cooldown added</li>
+    <li>**Nature's Grasp:** Now one rank, duration reduced to 5 sec</li>
+    <li>**Hibernation:** Now one rank, duration reduced to 16 sec, 1 min cooldown added</li>
+    <li>**Cyclone:** Duration increased to 8 sec, 45 sec cooldown added</li>
+    <li>**Tranquility:** Now one rank, duration reduced to 12 sec</li>
+    <li>**Bash:** Now one rank, duration set to 4 sec</li>
+    <li>**Threatening Roar:** Tooltip corrected</li>
+    <li>**Thorns:** Now one rank, aggro reduction set at 20%</li>
+    <li>**Cat Form:** Is now learned during a new druid quest, removed from trainer</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Brutal Impact:** Bash cooldown reduction lowered to 15/30 sec</li>
+  </SpellList>
+
+  <SpellList title="Glyphs:">
+    <li>**Of Entangling Roots:** Duration bonus lowered to 6 seconds</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Hunter">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**Freezing Arrow:** Removed</li>
+    <li>**Multi-Shot:** Can now be used while moving</li>
+    <li>**Frost Trap:** Now only has one rank, no longer shares a cooldown with Freezing Trap, 45 second cooldown, 16 second duration</li>
+    <li>**Freezing Trap:** Now one rank, no longer shares a cooldown with Frost Trap, 1 min cooldown, 12 sec duration</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Wyvern Sting:** Duration reduced to 16 sec</li>
+    <li>**Silencing Shot:** Cooldown increased to 16 seconds</li>
+  </SpellList>
+
+  <SpellList title="Glyphs:">
+    <li>**Of Wyvern Sting:** Now increases duration of sleep component by 6 sec</li>
+  </SpellList>
+
+  <SpellList title="Beasts:">
+    <li>The pet's Avoidance passive is now learned immediately, and increases by 1.5% per level (up to 45% at level 30)</li>
+    <li>Pets now know the Cower ability from the beginning</li>
+    <li>**Blood of the Rhino:** Bonus healing effect reduced to 5/10%</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Mage">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**Polymorph:** Now only has one rank, duration 16 seconds, cooldown 1 minute</li>
+    <li>**Frost Nova:** Now one rank</li>
+    <li>**Counterspell:** Cooldown reduced to 16 sec</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Improved Counterspell:** Cooldown reduction lowered to 2/4 sec</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Paladin">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>Class healing spells and Hand of Protection can now only target players</li>
+    <li>**Hammer of Justice:** Now only has one rank, duration set to 4 seconds</li>
+    <li>**Turn Evil:** 1 min cooldown added, 16 sec duration</li>
+    <li>**Aura of Zeal:** Now one rank, speed increase set to 10%</li>
+    <li>**Hand of Reckoning:** Miss debuff increased to 15%</li>
+    <li>**Righteous Defense:** Miss debuff increased to 15%</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Repentance:** Duration reduced to 12 sec</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Priest">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>Class healing and shielding spells can now only target players</li>
+    <li>**Shackle Undead:** Now only has one rank, duration reduced to 16 seconds, 1 minute cooldown added</li>
+    <li>**Psychic Scream:** Cooldown increased to 45 seconds</li>
+    <li>**Divine Verse:** Duration reduced to 12 seconds, limited to 5+5 targets, radius reduced to 20 yards</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Desperate Prayer:** Average duration reduced by 2 sec, limited to 5 targets</li>
+    <li>**Inspiration:** No longer affects Lesser Heal</li>
+    <li>**Silence:** Cooldown increased to 16 seconds, now also interrupts targets that are immune to silence</li>
+  </SpellList>
+
+  <SpellList title="Glyphs:">
+    <li>**Of Shackle Undead:** Now increases duration by 6 sec</li>
+    <li>**Of Psychic Scream:** Now increases duration by 4 sec</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Rogue">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**Sap:** Now only has one rank, duration set to 20 seconds</li>
+    <li>**Kick:** Cooldown increased to 12 sec, interrupt duration reduced to 3 sec</li>
+    <li>**Blind:** Duration increased to 16 sec</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Improved Kick:** Silence duration increased to 3 sec</li>
+    <li>**Urchin's Trick:** Limited to 3/4/5 targets per rank</li>
+    <li>**Anesthetic Poison:** Removed and replaced with Antiserum</li>
+    <li>**Antiserum (new):** Removes all poisons and diseases, can be used on allies, 1 min cooldown</li>
+  </SpellList>
+
+  <SpellList title="Glyphs:">
+    <li>**Of Blinding:** Now increases duration by 4 sec</li>
+    <li>**Of Sap:** Now increases range by 5 yards</li>
+  </SpellList>
+
+  <SpellList title="Items:">
+    <li>Anesthetic Poison reimplemented and level requirement reduced to 60</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Shaman">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>Class healing abilities can now only target players</li>
+    <li>**Hex:** Now available at level 24, duration set to 16 seconds</li>
+    <li>**Wind Shear:** Cooldown increased to 16 sec</li>
+    <li>**Earthbind Totem:** Cooldown increased to 45 sec</li>
+    <li>**Chain Heal:** No longer loses power when jumping to nearby ally</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Earth's Grasp:** Now reduces cooldown by 5/10 sec</li>
+    <li>**Cleanse Spirit:** Spell rank 2 removed</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Warlock">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**Life Tap:** Redesigned - demands a small portion of health for 35% of maximum mana, 20 second cooldown</li>
+    <li>**Fear:** Now only one rank, duration 16 sec, 1 min cd added</li>
+    <li>**Howl of Terror:** Now one rank, duration 8 sec, cd 90 sec</li>
+    <li>**Banish:** Now one rank, duration 16 sec, 1 min cd added, can now affect Undead</li>
+    <li>**Life Drain:** Effect greatly increased, 2 min cd added</li>
+  </SpellList>
+
+  <SpellList title="Talents:">
+    <li>**Improved Fear:** Nightmare effect duration increased to 6/12 sec, slowing effect 50%</li>
+    <li>**Improved Howl of Terror:** Now also reduces cooldown by 15/30 sec</li>
+    <li>**Improved Life Tap:** Redesigned - reduces cooldown by 2/4 sec</li>
+    <li>**Improved Felhunter:** Spell Lock cooldown reduction lowered to 2/4 sec</li>
+    <li>**Improved Imp:** Redesigned - increases Imp's health, grants damage resistance, increases mana replenishment</li>
+    <li>**Improved Shadow Bolt:** Grants 1-5% spell crit chance per rank, duration 10 sec</li>
+    <li>**Devastation:** Reduces Imp's Firebolt casting time by 1 sec</li>
+    <li>**Conflagration:** No longer consumes Immolate or Shadowfury</li>
+    <li>**Demonic Brutality:** Grants Voidwalker's Torment ability to heal it for 2-6% max health</li>
+  </SpellList>
+
+  <SpellList title="Glyphs:">
+    <li>**Of Fear:** Increases duration by 6 sec</li>
+    <li>**Of Howl of Terror:** Increases duration by 4 seconds</li>
+  </SpellList>
+
+  <SpellList title="Demons:">
+    <li>Avoidance passive learned immediately, increases 1.5% per level (max 45% at 30)</li>
+    <li>**Drink The Nether (Imp):** Grants 1-5% mana replenishment per 5 sec</li>
+    <li>**Phase Shift (Imp):** Grants 150% armor increase</li>
+    <li>**Firebolt (rank 4, Imp):** Casting time reduced to 2 sec</li>
+    <li>**Seduction (Succubus):** Duration 8 sec, 1 min cooldown, casting time 2.5 sec</li>
+    <li>**Spell Lock (Felhunter):** Cooldown reduced to 16 sec</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+<ClassPatchNote title="Warrior">
+<hr className="text-gray-700 text-opacity-100" />
+<div className="p-6 rounded-lg shadow-lg">
+  <SpellList title="Spells:">
+    <li>**Pummel:** Cooldown increased to 12 seconds, interrupt duration reduced to 3 seconds</li>
+    <li>**Disrupt:** Redesigned into Headbutt</li>
+    <li>**Headbutt (new):** Dazes enemy for 16 sec, 1 min cooldown, breakable by damage, any stance</li>
+    <li>**Disrupting Shout:** Redesigned - dazes enemies in range for 8 sec, breakable by damage</li>
+    <li>**Commanding Shout:** Now only affects players</li>
+    <li>**Mocking Blow:** Duration increased to 10 seconds</li>
+  </SpellList>
+</div>
+</ClassPatchNote>
+
+
+</div>
