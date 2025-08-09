@@ -1,12 +1,15 @@
+import Image from "next/image";
+
 const Background = () => {
 
   return (
     <>
       <div className="fixed inset-0 z-[-2]">
         {/* Background Image */}
-        <img
+        <Image
           src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/Login-Static.jpeg`}
           alt="Background"
+          fill
           sizes="100vw"
           className="object-cover"
         />

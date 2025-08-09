@@ -3,6 +3,7 @@
 import PatchNotesList from "@/components/PatchNotesList";
 import { motion } from "framer-motion";
 import { FaDiscord, FaPatreon } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -56,7 +57,13 @@ export default function Home() {
           transition={{ duration: 0.5 }}
           >
           <div className="flex-inline justify-between">
-            <img src="https://cdn.discordapp.com/avatars/861623842606940200/e9a010ec1be1cde42d898e761e349128.webp?size=128" className="  w-20 h-20 rounded-full mx-auto"/>
+            <Image 
+              src="https://cdn.discordapp.com/avatars/861623842606940200/e9a010ec1be1cde42d898e761e349128.webp?size=128" 
+              alt="Ed-Kay avatar" 
+              width={80} 
+              height={80} 
+              className="w-20 h-20 rounded-full mx-auto"
+            />
             <p className="mt-2">Ed-Kay</p>
             <p className="mb-2 text-gray-400">Solo Developer + Creator</p>
             <hr className="text-gray-700 text-opacity-100"></hr>
